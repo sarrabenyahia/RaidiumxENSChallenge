@@ -19,7 +19,7 @@ def samplewise_rand_index(y_true_df: pd.DataFrame, y_pred_df: pd.DataFrame) -> f
 #The following lines show how the csv files are read
 if __name__ == '__main__':
     CSV_FILE_Y_TRUE = './../data/Y_train_gjJent2.csv'  # path of the y_true csv file
-    CSV_FILE_Y_PRED = './../data/y_randomLtRTVKI.csv'  # path of the y_pred csv file
+    CSV_FILE_Y_PRED = './../data/y_random_LtRTVKl.csv'  # path of the y_pred csv file
     df_y_true = pd.read_csv(CSV_FILE_Y_TRUE, index_col=0, sep=',')
     df_y_pred = pd.read_csv(CSV_FILE_Y_PRED, index_col=0, sep=',')
     df_y_pred = df_y_pred.loc[df_y_true.index]
