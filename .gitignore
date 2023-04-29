@@ -131,5 +131,4 @@ dmypy.json
 /checkpoints_sam/
 src/medsam/work_dir/SAM/sam_vit_b_01ec64.pth
 *.DS_Store
-DS_Store
 .DS_Store
