@@ -42,7 +42,7 @@ def compute_dice(mask_gt, mask_pred):
 def finetune_model_predict(img_np, box_np, sam_trans, sam_model_tune, device='cuda:0'):
     H, W = img_np.shape[:2]
     resize_img = sam_trans.apply_image(img_np)
-    resize_img_tensor = torch.as_tensor(resize_img.transpose(2, 0, 1)).to('cuda:0')
+    resize_img_tensor = torch.as_tensor(resize_img.transpose(2, 0, 1)).to(device)
     input_image = sam_model_tune.preprocess(resize_img_tensor[None,:,:,:]) # (1, 3, 1024, 1024)
     with torch.no_grad():
         image_embedding = sam_model_tune.image_encoder(input_image.to(device)) # (1, 256, 64, 64)
@@ -83,7 +83,9 @@ args = parser.parse_args()
 
 #% load MedSAM model
 device = args.device
-sam_model_tune = sam_model_registry[args.model_type](checkpoint=args.checkpoint).to(device)
+map_location = 'cpu' if not torch.cuda.is_available() else None
+sam_model_tune = sam_model_registry[args.model_type]().to(device)
+sam_model_tune.load_state_dict(torch.load(args.checkpoint, map_location=map_location))
 sam_trans = ResizeLongestSide(sam_model_tune.image_encoder.img_size)
 
 npz_folders = sorted(os.listdir(args.data_path))
