@@ -83,9 +83,9 @@ args = parser.parse_args()
 
 #% load MedSAM model
 device = args.device
-map_location = 'cpu' if not torch.cuda.is_available() else None
+# map_location = 'cpu' if not torch.cuda.is_available() else None
 sam_model_tune = sam_model_registry[args.model_type]().to(device)
-sam_model_tune.load_state_dict(torch.load(args.checkpoint, map_location=map_location))
+# sam_model_tune.load_state_dict(torch.load(args.checkpoint, map_location=map_location))
 sam_trans = ResizeLongestSide(sam_model_tune.image_encoder.img_size)
 
 npz_folders = sorted(os.listdir(args.data_path))
@@ -94,6 +94,7 @@ for npz_folder in npz_folders:
     npz_data_path = join(args.data_path, npz_folder)
     save_path = join(args.seg_path_root, npz_folder)
     if not os.path.exists(save_path):
+        
         os.makedirs(save_path, exist_ok=True)
         npz_files = sorted(os.listdir(npz_data_path))
         for npz_file in tqdm(npz_files):
