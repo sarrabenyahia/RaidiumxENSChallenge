@@ -22,12 +22,21 @@ We tackled the challenge by using a combination of deep learning and image proce
     |-- .gitignore
     |-- src/
         |-- medsam/
+            |-- work_dir/
+                |-- SAM/
+                    |-- sam_vit_b_01ec64.pth
+                |-- MedSAM/
+                    |-- medsam_20230423_vit_b_0.0.1.pyh
+            |-- utils/
+                |-- precompute_img_embed.py
+            
         |-- sam/
             |-- SAM_inference.ipynb
         |-- unet/
             |-- load_data.py
             |-- unet_medical_seg.ipynb
     |-- data/
+        |-- Y_train.csv
         |-- X_train/
             |-- 0.png
             |-- ...
