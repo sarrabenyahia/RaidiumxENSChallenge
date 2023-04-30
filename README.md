@@ -15,7 +15,7 @@ We tackled the challenge by using a combination of deep learning and image proce
 1. Create the data folder
 2. Download the data from the challenge [here](https://challengedata.ens.fr/participants/challenges/105/)
 3. Download checkpoints and models:
-- **SAM checkpoint**: [here]
+- **SAM checkpoint**: [here]((https://dl.fbaipublicfiles.com/segment_anything/sam_vit_l_0b3195.pth)
 - **MedSAM**: [here](https://drive.google.com/drive/folders/1bWv_Zs5oYLpGMAvbotnlNXJPq7ltRUvF?usp=share_link) 
 - **SAM for MedSAM**: [here](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth)
 4. Insert data as follow:
