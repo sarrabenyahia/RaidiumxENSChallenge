@@ -21,14 +21,13 @@ We tackled the challenge by using a combination of deep learning and image proce
     |-- requirements.txt
     |-- .gitignore
     |-- src/
-        |-- medsam
-        |-- sam
+        |-- medsam/
+        |-- sam/
             |-- SAM_inference.ipynb
-        |-- unet
+        |-- unet/
             |-- load_data.py
             |-- unet_medical_seg.ipynb
     |-- data/
-        |-- dataset.csv
         |-- X_train/
             |-- 0.png
             |-- ...
