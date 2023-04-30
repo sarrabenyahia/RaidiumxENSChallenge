@@ -15,6 +15,23 @@ We tackled the challenge by using a combination of deep learning and image proce
 1. Create the data folder
 2. Download the data [here](https://challengedata.ens.fr/participants/challenges/105/)
 3. Insert data as follow:
+-- nom de votre projet/
+    |-- README.md
+    |-- requirements.txt
+    |-- main.py
+    |-- data/
+        |-- dataset.csv
+        |-- images/
+            |-- image1.jpg
+            |-- image2.png
+        |-- models/
+            |-- model1.pkl
+            |-- model2.pkl
+        |-- results/
+            |-- analysis.csv
+            |-- figures/
+                |-- figure1.png
+                |-- figure2.jpg
 
 
 ## Installation
