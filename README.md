@@ -14,14 +14,7 @@ We tackled the challenge by using a combination of deep learning and image proce
 ## Data
 1. Create the data folder
 2. Download the data [here](https://challengedata.ens.fr/participants/challenges/105/)
-| Field | Type | Description |
-| --- | --- | --- |
-| id | integer | The unique ID of the user |
-| name | string | The user's name |
-| email | string | The user's email address |
-| password | string | The user's password (encrypted) |
-| created_at | timestamp | The date and time the user was created |
-| updated_at | timestamp | The date and time the user was last updated |
+3. Insert data as follow:
 
 
 ## Installation
