@@ -21,7 +21,7 @@ We tackled the challenge by using a combination of deep learning and image proce
 - [ ] Enlarge the dataset
 - [ ] Run inference with MedSam on bounding box mode and stack the predictions
 - [ ] Try running the code on GPU
-- [ ] Explore other fine-tuning/pre-trained inference methods
+- [ ] Explore other fine-tuning/pre-trained inference methods 
 
 ## Acknowledgements
 We express our deep gratitude to the challenge organizers and the owners of the dataset for their invaluable contribution to the community by providing a public dataset. We would also like to extend our appreciation to Meta AI for generously sharing the source code for segmenting anything.Furthermore, we would like to extend our heartfelt appreciation to the team at Toronto University for sharing their valuable work on fine-tuning MedSAM, and for their eagerness to allow us to contribute to their project.
