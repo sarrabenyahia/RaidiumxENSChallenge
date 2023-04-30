@@ -11,6 +11,19 @@ The ENSxRaidium challenge addresses these limitations by focusing on unsupervise
 ## Our approach
 We tackled the challenge by using a combination of deep learning and image processing techniques. Specifically, we used a pre-trained U-Net model to segment the visible structures in the CT scans, followed by post-processing steps to refine the segmentation masks and separate overlapping structures. We also experimented with data augmentation and transfer learning using SAM and MedSAM to improve the performance of the model.
 
+## Data
+1. Create the data folder
+2. Download the data [here](https://challengedata.ens.fr/participants/challenges/105/)
+| Field | Type | Description |
+| --- | --- | --- |
+| id | integer | The unique ID of the user |
+| name | string | The user's name |
+| email | string | The user's email address |
+| password | string | The user's password (encrypted) |
+| created_at | timestamp | The date and time the user was created |
+| updated_at | timestamp | The date and time the user was last updated |
+
+
 ## Installation
 1. Create a virtual environment `python3.10 -m venv .env` and activate it `source .env/bin/activate`
 2. Install [Pytorch 2.0](https://pytorch.org/get-started/locally/)
