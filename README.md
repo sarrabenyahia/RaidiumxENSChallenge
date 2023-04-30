@@ -13,8 +13,12 @@ We tackled the challenge by using a combination of deep learning and image proce
 
 ## Data
 1. Create the data folder
-2. Download the data [here](https://challengedata.ens.fr/participants/challenges/105/)
-3. Insert data as follow:
+2. Download the data from the challenge [here](https://challengedata.ens.fr/participants/challenges/105/)
+3. Download checkpoints and models:
+- **SAM checkpoint**: [here]
+- **MedSAM**: [here](https://drive.google.com/drive/folders/1bWv_Zs5oYLpGMAvbotnlNXJPq7ltRUvF?usp=share_link) 
+- **SAM for MedSAM**: [here](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth)
+4. Insert data as follow:
 ```
 -- RaidiumxENSChallenge/
     |-- README.md
@@ -26,7 +30,7 @@ We tackled the challenge by using a combination of deep learning and image proce
                 |-- SAM/
                     |-- sam_vit_b_01ec64.pth
                 |-- MedSAM/
-                    |-- medsam_20230423_vit_b_0.0.1.pyh
+                    |-- medsam_20230423_vit_b_0.0.1.pth
             |-- utils/
                 |-- precompute_img_embed.py
                 |-- SurfaceDice.py
