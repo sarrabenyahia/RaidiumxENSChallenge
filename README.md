@@ -30,8 +30,17 @@ We tackled the challenge by using a combination of deep learning and image proce
             |-- utils/
                 |-- precompute_img_embed.py
                 |-- SurfaceDice.py
+            |-- finetune_and_inference_tutorial_2D_dataset.ipynb
+            |-- MedSAM_Inference.py
+            |-- MedSAM.ipynb
+            |-- new_preCT.py
+            |-- pre_CT_png.py
+            |-- pre_CT.py
+            |-- pre_grey_rgb2D.py
         |-- sam/
             |-- SAM_inference.ipynb
+            |-- checkpoints_sam/
+                |-- sam_vit_l_0b3195.pth
         |-- unet/
             |-- load_data.py
             |-- unet_medical_seg.ipynb
