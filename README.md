@@ -15,6 +15,7 @@ We tackled the challenge by using a combination of deep learning and image proce
 1. Create the data folder
 2. Download the data [here](https://challengedata.ens.fr/participants/challenges/105/)
 3. Insert data as follow:
+```
 -- nom de votre projet/
     |-- README.md
     |-- requirements.txt
@@ -32,7 +33,7 @@ We tackled the challenge by using a combination of deep learning and image proce
             |-- figures/
                 |-- figure1.png
                 |-- figure2.jpg
-
+```
 
 ## Installation
 1. Create a virtual environment `python3.10 -m venv .env` and activate it `source .env/bin/activate`
