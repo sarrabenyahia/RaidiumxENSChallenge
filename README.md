@@ -16,23 +16,37 @@ We tackled the challenge by using a combination of deep learning and image proce
 2. Download the data [here](https://challengedata.ens.fr/participants/challenges/105/)
 3. Insert data as follow:
 ```
--- nom de votre projet/
+-- RaidiumxENSChallenge/
     |-- README.md
     |-- requirements.txt
-    |-- main.py
+    |-- .gitignore
+    |-- src/
+        |-- medsam
+        |-- sam
+            |-- SAM_inference.ipynb
+        |-- unet
+            |-- load_data.py
+            |-- unet_medical_seg.ipynb
     |-- data/
         |-- dataset.csv
-        |-- images/
-            |-- image1.jpg
-            |-- image2.png
-        |-- models/
-            |-- model1.pkl
-            |-- model2.pkl
-        |-- results/
-            |-- analysis.csv
-            |-- figures/
-                |-- figure1.png
-                |-- figure2.jpg
+        |-- X_train/
+            |-- 0.png
+            |-- ...
+            |-- 999.png
+        |-- X_test/
+            |-- 0.png
+            |-- ...
+            |-- 499.png
+        |-- Supp_train/
+            |-- plots/
+                |-- seg_0.png
+                |-- ...
+                |-- seg_999.png              
+            |-- segmentations/
+                |-- 0.png
+                |-- ...
+                |-- 999.png                
+            
 ```
 
 ## Installation
