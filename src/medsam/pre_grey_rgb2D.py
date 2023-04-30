@@ -66,7 +66,7 @@ for gt_name in tqdm(names):
         # resize image to 3*1024*1024
         sam_transform = ResizeLongestSide(sam_model.image_encoder.img_size)
         resize_img = sam_transform.apply_image(image_data_pre)
-        resize_img_tensor = torch.as_tensor(resize_img.transpose(2, 0, 1)).to('cuda:0')
+        resize_img_tensor = torch.as_tensor(resize_img.transpose(2, 0, 1)).to(args.device)
         input_image = sam_model.preprocess(resize_img_tensor[None,:,:,:]) # (1, 3, 1024, 1024)
         assert input_image.shape == (1, 3, sam_model.image_encoder.img_size, sam_model.image_encoder.img_size), 'input image should be resized to 1024*1024'
         # pre-compute the image embedding
@@ -88,5 +88,4 @@ if len(imgs)>1:
     bd = segmentation.find_boundaries(gt_idx, mode='inner')
     img_idx[bd, :] = [255, 0, 0]
     io.imsave(save_path + '.png', img_idx, check_contrast=False)
-
 
