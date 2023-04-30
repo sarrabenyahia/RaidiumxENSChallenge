@@ -29,7 +29,7 @@ We tackled the challenge by using a combination of deep learning and image proce
                     |-- medsam_20230423_vit_b_0.0.1.pyh
             |-- utils/
                 |-- precompute_img_embed.py
-            
+                |-- SurfaceDice.py
         |-- sam/
             |-- SAM_inference.ipynb
         |-- unet/
