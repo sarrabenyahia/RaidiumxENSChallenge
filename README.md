@@ -9,7 +9,7 @@ CT scans are widely used in medical imaging to diagnose and treat diseases. Auto
 The ENSxRaidium challenge addresses these limitations by focusing on unsupervised or weakly supervised methods that can segment multiple structures simultaneously without explicit labels or semantic information. The challenge provides a dataset of CT scans with partial annotations of a few structures and asks participants to predict the segmentation masks of other structures in the same scans.
 
 ## Our approach
-We tackled the challenge by using a combination of deep learning and image processing techniques. Specifically, we used a pre-trained U-Net model to segment the visible structures in the CT scans, followed by post-processing steps to refine the segmentation masks and separate overlapping structures. We also experimented with data augmentation and transfer learning using SAM and MedSAM to improve the performance of the model.
+We tackled the challenge by using a combination of deep learning and image processing techniques. Specifically, we used a U-Net model to segment the visible structures in the CT scans, followed by post-processing steps to refine the segmentation masks and separate overlapping structures. We also experimented with data augmentation and transfer learning using SAM and MedSAM to improve the performance of the model.
 
 ## Data
 1. Create the data folder
